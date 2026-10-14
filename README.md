@@ -22,6 +22,19 @@ For a specific agent (for example Claude Code and OpenCode, globally):
 npx skills add patrickpassosb/renor-skills@renor-memory -a claude-code -a opencode -g -y
 ```
 
+### Claude Code plugin
+
+Claude Code can install the skill and the Renor MCP server together, as one plugin. Inside
+Claude Code, run these two commands:
+
+```text
+/plugin marketplace add patrickpassosb/renor-skills
+/plugin install renor@renor
+```
+
+Then sign in once: run `/mcp`, select `plugin:renor:renor`, choose Authenticate, and approve
+in the browser. The plugin signs in with OAuth, so no token goes in your config.
+
 ## What it does
 
 - `skills/renor-memory/SKILL.md` — the skill itself, in the Agent Skills format (YAML

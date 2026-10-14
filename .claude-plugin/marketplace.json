@@ -1,0 +1,12 @@
+{
+  "name": "renor",
+  "description": "Renor: durable memory for AI agents, over MCP",
+  "owner": { "name": "Renor", "url": "https://renor.cloud" },
+  "plugins": [
+    {
+      "name": "renor",
+      "source": "./",
+      "description": "Connect Claude Code to your Renor memory and teach it when to recall and when to save."
+    }
+  ]
+}
