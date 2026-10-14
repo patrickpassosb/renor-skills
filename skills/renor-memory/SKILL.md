@@ -75,6 +75,12 @@ Before you finish any substantive piece of work, run this check and act on it:
    the current value of one thing that can change later (a city, a database, a deadline, a
    preference), also pass subject, predicate and object together, spelled the same way every
    time. Decisions, root causes and corrections need none of the three; never guess them.
+   A standing rule is the exception: what needs approval, or what an agent may or may not do
+   on its own ("ask Patrick before any user-visible UI change"). Save it as a fact, not a note:
+   subject what it governs ("Renor UI changes"), predicate `rule` (or `policy`, `approval`),
+   object the rule in plain words, in the project's scope. `get_context` puts such facts first
+   when an agent asks whether it may do something; a rule saved as a note comes back only when
+   the question happens to share its words.
 3. If a recorded fact contradicts an older one, record the new value with the same subject,
    predicate and scope as the old one, so it supersedes it. Renor keeps the history and
    the newest value answers future questions.
