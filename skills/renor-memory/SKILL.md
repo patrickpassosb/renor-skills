@@ -118,8 +118,10 @@ On your first Renor call of a session, read the connection status in its reply (
 field: the hosted workspace and server URL). If that is not the workspace the user expects, tell the
 user before relying on it. An error reply carries the same status.
 
-If any Renor tool is missing or returns an authentication error, the MCP server entry
-is misconfigured rather than the memory being empty. This is the correct config:
+If the Renor tools are missing or return an authentication error, run `/mcp` and authenticate
+`plugin:renor:renor` (Claude Code with the plugin). If you configured Renor by hand instead, use
+`https://mcp.renor.cloud/mcp` with a connect token from the dashboard (API keys). That config
+looks like this:
 
 ```json
 {
