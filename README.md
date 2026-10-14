@@ -12,6 +12,18 @@ the skill names only a placeholder token.
 
 ## Install
 
+Run this in your project directory. It asks nothing, so your agent can run it too:
+
+```sh
+npx skills add patrickpassosb/renor-skills --agent '*' -y
+```
+
+It puts the skill in `.agents/skills/renor-memory` in that directory and links it for the agents you use there.
+
+In your own terminal you can run the interactive form instead. It asks which agents to install to; inside an agent it
+recognises, such as Claude Code, it asks nothing. In a shell with no terminal and no recognised agent it installs
+nothing, so give an agent the form above.
+
 ```sh
 npx skills add patrickpassosb/renor-skills@renor-memory
 ```
